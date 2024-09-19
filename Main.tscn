@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://314i1u1rsh6k"]
+
+[ext_resource type="Script" path="res://stair_blj.gd" id="1_ipxn7"]
+[ext_resource type="Script" path="res://frame_count_label.gd" id="1_s60bw"]
+[ext_resource type="Script" path="res://frames_pressed_label.gd" id="2_edvt8"]
+
+[node name="StairBlj" type="Node2D"]
+script = ExtResource("1_ipxn7")
+
+[node name="FrameCountLabel" type="Label" parent="."]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 50.0
+offset_bottom = 33.0
+theme_override_font_sizes/font_size = 50
+script = ExtResource("1_s60bw")
+
+[node name="FramesPressedLabel" type="Label" parent="."]
+offset_right = 1922.0
+offset_bottom = 1091.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 80
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_edvt8")
