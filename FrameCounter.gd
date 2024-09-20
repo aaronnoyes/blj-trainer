@@ -53,7 +53,7 @@ func update(delta):
 
 		frame_count += 1
 
-		if time_since_last_press > 1.0:
+		if time_since_last_press > 0.5:
 			stop_counting()
 
 	was_pressed_last_frame = is_pressed
