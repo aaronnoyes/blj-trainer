@@ -1,8 +1,8 @@
 extends Label
 
 func _ready():
-	text = ""
+	text = "BPM: 0.0"
 
 func _process(delta):
 	if FrameCounter.is_counting:
-		text = "  ".join(FrameCounter.frames_pressed.slice(0, 9))
+		text = "BPM: %.2f" % FrameCounter.bpm
