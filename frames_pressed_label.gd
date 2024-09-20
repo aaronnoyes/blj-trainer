@@ -5,4 +5,4 @@ func _ready():
 
 func _process(delta):
 	if FrameCounter.is_counting:
-		text = "  ".join(FrameCounter.frames_pressed.slice(0, 9))
+		text = "  ".join(FrameCounter.frames_pressed.slice(0, 3))
